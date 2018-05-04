@@ -13,7 +13,6 @@ namespace classesAndObjects
             TwentyOneGame game = new TwentyOneGame() { Dealer = "Seth", Name = "Twenty-One" };
             game.Players = new List<string>() { "Jesse", "Bill", "Joe" };
             game.ListPlayers();
-            game.Play();
             Console.ReadLine();
 
             //    Deck deck = new Deck();
