@@ -8,6 +8,8 @@ namespace classesAndObjects
 {
     public class Dealer
     {
+        private List<Card> _burnPile = new List<Card>();
+        public List<Card> BurnPile { get { return _burnPile; } set { _burnPile = value; } }
         public string Name { get; set; }
         public Deck Deck { get; set; }
         public int Balance { get; set; }
