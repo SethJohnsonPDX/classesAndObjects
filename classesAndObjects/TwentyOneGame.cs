@@ -1,4 +1,5 @@
-﻿using System;
+﻿using classesAndObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -99,16 +100,14 @@ namespace classesAndObjects
                         if (answer == "yes" || answer == "yeah")
                         {
                             player.isActivelyPlaying = true;
-                            }
                         }
-                        else
-                        {
-                            player.isActivelyPlaying = false;
-                        }
+                    }
+                    else
+                    {
+                        player.isActivelyPlaying = false;
                     }
                 }
             }
-
             Dealer.isBusted = TwentyOneRules.IsBusted(Dealer.Hand);
             Dealer.Stay = TwentyOneRules.ShouldDealerStay(Dealer.Hand);
             while (!Dealer.Stay && !Dealer.isBusted)
@@ -163,9 +162,7 @@ namespace classesAndObjects
                     player.isActivelyPlaying = false;
                 }
             }
-
         }
-
         public override void ListPlayers()
         {
             Console.WriteLine("21 Players:");
